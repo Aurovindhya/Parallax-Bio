@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'AlphaCentauri'!important;
+    src: url('asset/Alphacentauri-MVY4p.ttf') 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Allerta Stencil !important;
+    list-style: none;
+    box-sizing: border-box;
+    background: #000;
+  }
+  
+  html{
+      font-size: 6.25%;
+  }
+
+  nav {
+    position: fixed;
+    z-index: 100;
+    height: 8vh;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 30rem;
+  }
+  
+  .logo {
+    font-family: 'Trebuchet MS' !important;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16rem;
+  }
+  
+  nav .nav-links ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav .nav-links ul li {
+    padding: 0 4rem;
+    list-style: none;
+  }
+  
+  nav .nav-links ul li img {
+    transform: scale(0.45);
+  }
+  
+  section {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .bg img {
+    width: 110vw;
+    height: 110vh;
+    filter: brightness(0.6);
+  }
+  
+  .rock1 {
+    position: absolute !important;
+    left: 10vw !important;
+    top: 20vh !important;
+  }
+  
+  .rock1 img {
+    width: 40%;
+    filter: brightness(0.5);
+  }
+  
+  .text h1 {
+    font-size: 5vw;
+    color: #fff;
+    letter-spacing: 20rem;
+    position: absolute;
+    top: 35vh;
+    left: 34vw;
+  }
+  
+  .earth img {
+    width: 400rem;
+    height: 400rem;
+    position: absolute;
+    left: 34vw;
+    top: 25vh;
+    z-index: 1;
+    filter: brightness(0.7);
+  }
+  
+  .mid {
+    left: -150rem !important;
+    bottom: -100rem !important;
+    top: unset !important;
+  }
+  
+  .mid img {
+    width: 100%;
+    z-index: 2;
+    left: -20rem;
+    top: 20vh !important;
+    filter: brightness(0.8);
+  }
+  
+  .fore {
+    right: -50rem !important;
+    bottom: -200rem !important;
+    top: 0rem !important;
+    left: unset !important;
+  }
+  
+  .fore img {
+    width: 400rem;
+    height: 110vh;
+    z-index: 3;
+    filter: brightness(0.5);
+  }
+  
+  /* SWIPER */
+  
+  #sectiontwo {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .rockbg1 {
+    position: absolute;
+    transform: scale(0.2);
+    filter: brightness(0.2);
+    top: 20vh;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .planet-links {
+    width: 95%;
+    height: 5vh;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 19rem;
+  }
+  
+  .planet-links .swiper-pagination-bullet {
+    opacity: 0.2;
+    outline: none;
+  }
+  .planet-links .swiper-pagination-bullet-active {
+    color: #fff;
+    opacity: 1;
+  }
+  
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    background: transparent;
+  }
+  
+  .swiper-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50rem 0;
+  }
+  
+  .swiper-wrapper {
+    transition-delay: 0.5s;
+  }
+  
+  .swiper-slide {
+    height: 400rem !important;
+    width: 90% !important;
+    background: transparent;
+  }
+  
+  .swiper-slide:nth-child(1) .slide-img {
+    background-image: url("images/who1.png");
+  }
+  .swiper-slide:nth-child(2) .slide-img {
+    background-image: url("images/where1.png");
+  }
+  .swiper-slide:nth-child(3) .slide-img {
+    background-image: url("images/skills.png");
+  }
+  .swiper-slide:nth-child(4) .slide-img {
+    background-image: url("images/achievement.png");
+  }
+  .swiper-slide:nth-child(5) .slide-img {
+    background-image: url("images/fun.png");
+  }
+  .swiper-slide:nth-child(6) .slide-img {
+    background-image: url("images/bye.png");
+  }
+  
+  
+  .slide-img {
+    background-position: "center";
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    width: 30%;
+    height: 100%;
+  }
+  
+  .slide-number {
+    position: absolute;
+    top: -30rem;
+    left: 30%;
+    width: 2000rem;
+    height: 120rem;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .slide-number p {
+    font-size: 40rem;
+    color: #fff;
+    position: relative;
+  }
+  
+  .slide-number p span {
+    position: absolute;
+  }
+  
+  .slide-detail {
+    font-family: 'Trebuchet MS' !important;
+    position: absolute;
+    top: 90rem;
+    left: 30%;
+    z-index: 10;
+    width: 50%;
+    height: 400rem;
+    overflow: hidden;
+  }
+  
+  .slide-detail p {
+    font-family: 'Trebuchet MS' !important;
+    font-size: 25rem;
+    color: #fff;
+    position: relative;
+    opacity: 0.8;
+    line-height: 30rem;
+  }
+  
+  .slide-detail p span {
+    position: absolute;
+  }
+  
+  .slide-detail-facts {
+    font-family: 'Trebuchet MS' !important;
+    font-size: 18rem;
+    position: absolute;
+    top: 350rem;
+    left: 30%;
+    z-index: 100;
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    color: #fff;
+  }
+  .slide-detail-facts div {
+    font-family: 'Trebuchet MS' !important;
+    display: flex;
+    position: relative;
+  }
+  .slide-detail-facts div h5 {
+    font-family: 'Trebuchet MS' !important;
+    margin-right: 20%;
+  }
+  
+  .slide-text {
+    /*font-family: Allerta Stencil !important;*/
+    position: absolute;
+    top: -150rem;
+    left: 22%;
+    z-index: 9;
+    width: 200rem;
+    height: 400rem;
+    overflow: hidden;
+    opacity: 0.1 !important;
+  }
+  
+  .slide-text h4 {
+    /*font-family: Allerta Stencil !important;*/
+    color: #fff;
+    font-size: 100rem;
+    position: relative;
+  }
+  .slide-text h4 span {
+    position: absolute;
+  }
+
+  /*responsive code*/
+  @media(max-width:998px) {
+      html {
+          font-size: 5.5%;
+      }
+  }
+
+  @media(max-width:768px) {
+    html {
+        font-size: 4.5%;
+    }
+
+    @viewport{
+        zoom: 1.0;
+        width: extend-to-zoom;
+    }
+
+    @-ms-viewport{
+        width: extend-to-zoom;
+        zoom:1.0;
+    }
+}
+
+a:link {
+  text-decoration: none;
+  color: yellow;
+}
+
+a:visited {
+  text-decoration: none;
+  color: skyblue;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+a:active {
+  text-decoration: underline;
+  color: skyblue;
+}
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+}
+
+@media (min-device-width:600px) {
+  img[data-src-600px] {
+      content: attr(data-src-600px, url);
+  }
+}
+
+@media (min-device-width:800px) {
+  img[data-src-800px] {
+      content: attr(data-src-800px, url);
+  }
+}
